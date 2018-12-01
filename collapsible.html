@@ -1,0 +1,86 @@
+<html>
+<head>
+<nav class ="nav">
+    <div class ="nav-mobile">
+        <ul class ="left">
+           <li><a href="website.html"><i class="fa fa-envelope"></i> home</a></li>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>About</h2>
+
+<p></p>
+<button class="collapsible">Biography </button>
+<div class="content">
+  <p>Full Name: Vivek Deswal</p>
+<p>Father’s name: Sh.Kalyan Singh</p>
+<p>Address and Pin Code: V.Po.-Holi, tehsil-barara,distt-Ambala(Haryana) 
+133201</p>
+<p>Mobile number: 9992601045</p>
+<p>E-mail: Vanshdeswal30@gmail.com</p>
+<p>Date of birth: 30/03/2000</p>
+</p>
+</div>
+
+<p></p>
+<button class="collapsible">Qualification </button>
+<div class="content">
+  <p>10th Class | Central Board for Secondary Education (CBSE) 
+Gurukul kurukshetra, kurukshetra  
+CGPA: 9.6 </p>
+<p>12th Class | Central Board for Secondary Education (CBSE) 
+ Gurukul Kurukshetra, Kurukshetra  
+Percentage: 68% </p>
+<p>B. Tech | CSE with Specialization in Software Development 
+MMDU 
+Currently Studying 
+</p>
+
+
+
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
